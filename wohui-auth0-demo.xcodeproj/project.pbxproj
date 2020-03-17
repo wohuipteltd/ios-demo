@@ -10,11 +10,14 @@
 		B73ADF9C49447DBD5B7FAD57 /* Pods_wohui_auth0_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA53847CDC371626B0B43BA /* Pods_wohui_auth0_demo.framework */; };
 		CFE2933324206B6C0012244E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2933224206B6C0012244E /* AppDelegate.swift */; };
 		CFE2933524206B6C0012244E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2933424206B6C0012244E /* SceneDelegate.swift */; };
-		CFE2933724206B6C0012244E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2933624206B6C0012244E /* ViewController.swift */; };
 		CFE2933A24206B6C0012244E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE2933824206B6C0012244E /* Main.storyboard */; };
 		CFE2933C24206B6E0012244E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE2933B24206B6E0012244E /* Assets.xcassets */; };
 		CFE2933F24206B6E0012244E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE2933D24206B6E0012244E /* LaunchScreen.storyboard */; };
 		CFE2934724206CA40012244E /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFE2934624206CA40012244E /* Auth0.plist */; };
+		CFF0735B2420A0EC0086660E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0735A2420A0EC0086660E /* SessionManager.swift */; };
+		CFF0735F2420A1270086660E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0735C2420A1260086660E /* ProfileViewController.swift */; };
+		CFF073602420A1270086660E /* AlertController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0735D2420A1260086660E /* AlertController+Loading.swift */; };
+		CFF073612420A1270086660E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0735E2420A1260086660E /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +26,16 @@
 		CFE2932F24206B6C0012244E /* wohui-auth0-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wohui-auth0-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE2933224206B6C0012244E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFE2933424206B6C0012244E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFE2933624206B6C0012244E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFE2933924206B6C0012244E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFE2933B24206B6E0012244E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE2933E24206B6E0012244E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFE2934024206B6E0012244E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE2934624206CA40012244E /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		CFEBC64A2FCBC70F45FD04F2 /* Pods-wohui-auth0-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wohui-auth0-demo.debug.xcconfig"; path = "Target Support Files/Pods-wohui-auth0-demo/Pods-wohui-auth0-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		CFF0735A2420A0EC0086660E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		CFF0735C2420A1260086660E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CFF0735D2420A1260086660E /* AlertController+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertController+Loading.swift"; sourceTree = "<group>"; };
+		CFF0735E2420A1260086660E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +90,15 @@
 			children = (
 				CFE2933224206B6C0012244E /* AppDelegate.swift */,
 				CFE2933424206B6C0012244E /* SceneDelegate.swift */,
-				CFE2933624206B6C0012244E /* ViewController.swift */,
+				CFF0735D2420A1260086660E /* AlertController+Loading.swift */,
+				CFF0735E2420A1260086660E /* HomeViewController.swift */,
+				CFF0735C2420A1260086660E /* ProfileViewController.swift */,
 				CFE2933824206B6C0012244E /* Main.storyboard */,
 				CFE2933B24206B6E0012244E /* Assets.xcassets */,
 				CFE2933D24206B6E0012244E /* LaunchScreen.storyboard */,
 				CFE2934024206B6E0012244E /* Info.plist */,
 				CFE2934624206CA40012244E /* Auth0.plist */,
+				CFF0735A2420A0EC0086660E /* SessionManager.swift */,
 			);
 			path = "wohui-auth0-demo";
 			sourceTree = "<group>";
@@ -210,9 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE2933724206B6C0012244E /* ViewController.swift in Sources */,
 				CFE2933324206B6C0012244E /* AppDelegate.swift in Sources */,
+				CFF0735F2420A1270086660E /* ProfileViewController.swift in Sources */,
+				CFF0735B2420A0EC0086660E /* SessionManager.swift in Sources */,
 				CFE2933524206B6C0012244E /* SceneDelegate.swift in Sources */,
+				CFF073612420A1270086660E /* HomeViewController.swift in Sources */,
+				CFF073602420A1270086660E /* AlertController+Loading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
