@@ -1,0 +1,18 @@
+# OSX
+.DS_Store
+
+# iOS
+*.pbxuser
+*.xcuserstate
+project.xcworkspace/
+*~.nib
+xcuserdata%
+
+Pods/
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+R.generated.swift

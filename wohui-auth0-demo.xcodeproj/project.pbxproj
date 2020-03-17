@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73ADF9C49447DBD5B7FAD57 /* Pods_wohui_auth0_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA53847CDC371626B0B43BA /* Pods_wohui_auth0_demo.framework */; };
 		CFE2933324206B6C0012244E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2933224206B6C0012244E /* AppDelegate.swift */; };
 		CFE2933524206B6C0012244E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2933424206B6C0012244E /* SceneDelegate.swift */; };
 		CFE2933724206B6C0012244E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2933624206B6C0012244E /* ViewController.swift */; };
 		CFE2933A24206B6C0012244E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE2933824206B6C0012244E /* Main.storyboard */; };
 		CFE2933C24206B6E0012244E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE2933B24206B6E0012244E /* Assets.xcassets */; };
 		CFE2933F24206B6E0012244E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE2933D24206B6E0012244E /* LaunchScreen.storyboard */; };
+		CFE2934724206CA40012244E /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFE2934624206CA40012244E /* Auth0.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FA53847CDC371626B0B43BA /* Pods_wohui_auth0_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wohui_auth0_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1937743EDE02A58F6D4A8A7 /* Pods-wohui-auth0-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wohui-auth0-demo.release.xcconfig"; path = "Target Support Files/Pods-wohui-auth0-demo/Pods-wohui-auth0-demo.release.xcconfig"; sourceTree = "<group>"; };
 		CFE2932F24206B6C0012244E /* wohui-auth0-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wohui-auth0-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE2933224206B6C0012244E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFE2933424206B6C0012244E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		CFE2933B24206B6E0012244E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE2933E24206B6E0012244E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFE2934024206B6E0012244E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE2934624206CA40012244E /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		CFEBC64A2FCBC70F45FD04F2 /* Pods-wohui-auth0-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wohui-auth0-demo.debug.xcconfig"; path = "Target Support Files/Pods-wohui-auth0-demo/Pods-wohui-auth0-demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73ADF9C49447DBD5B7FAD57 /* Pods_wohui_auth0_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2998AEEF86E53315E611ACEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FA53847CDC371626B0B43BA /* Pods_wohui_auth0_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76CCC4B475F4C44BABFF1A45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFEBC64A2FCBC70F45FD04F2 /* Pods-wohui-auth0-demo.debug.xcconfig */,
+				B1937743EDE02A58F6D4A8A7 /* Pods-wohui-auth0-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CFE2932624206B6C0012244E = {
 			isa = PBXGroup;
 			children = (
 				CFE2933124206B6C0012244E /* wohui-auth0-demo */,
 				CFE2933024206B6C0012244E /* Products */,
+				76CCC4B475F4C44BABFF1A45 /* Pods */,
+				2998AEEF86E53315E611ACEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				CFE2933B24206B6E0012244E /* Assets.xcassets */,
 				CFE2933D24206B6E0012244E /* LaunchScreen.storyboard */,
 				CFE2934024206B6E0012244E /* Info.plist */,
+				CFE2934624206CA40012244E /* Auth0.plist */,
 			);
 			path = "wohui-auth0-demo";
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE2934324206B6E0012244E /* Build configuration list for PBXNativeTarget "wohui-auth0-demo" */;
 			buildPhases = (
+				008E332490E0F93C9AFDCED3 /* [CP] Check Pods Manifest.lock */,
 				CFE2932B24206B6C0012244E /* Sources */,
 				CFE2932C24206B6C0012244E /* Frameworks */,
 				CFE2932D24206B6C0012244E /* Resources */,
+				BEE1CFA565EC8F37D33EACDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +157,53 @@
 				CFE2933F24206B6E0012244E /* LaunchScreen.storyboard in Resources */,
 				CFE2933C24206B6E0012244E /* Assets.xcassets in Resources */,
 				CFE2933A24206B6C0012244E /* Main.storyboard in Resources */,
+				CFE2934724206CA40012244E /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		008E332490E0F93C9AFDCED3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wohui-auth0-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEE1CFA565EC8F37D33EACDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wohui-auth0-demo/Pods-wohui-auth0-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wohui-auth0-demo/Pods-wohui-auth0-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wohui-auth0-demo/Pods-wohui-auth0-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFE2932B24206B6C0012244E /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		CFE2934424206B6E0012244E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEBC64A2FCBC70F45FD04F2 /* Pods-wohui-auth0-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		CFE2934524206B6E0012244E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1937743EDE02A58F6D4A8A7 /* Pods-wohui-auth0-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

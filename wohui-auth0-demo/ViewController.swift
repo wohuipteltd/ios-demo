@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import Auth0
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func startAction(_ sender: Any) {
+        Auth0
+        .webAuth()
+        .audience("https://cnl.wohui.co/")
+        .start { result in
+            switch result {
+            case .success(let credentials):
+                print("Obtained credentials: \(credentials)")
+            case .failure(let error):
+                print("Failed with \(error)")
+            }
+        }
     }
-
-
+    
+    @IBAction func logoutAction(_ sender: Any) {
+        Auth0
+        .webAuth()
+        .clearSession(federated:false) { success in
+            print("clearSession: \(success)")
+        }
+    }
 }
 
