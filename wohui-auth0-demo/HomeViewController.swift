@@ -38,7 +38,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func showLoginController(_ sender: UIButton) {
         SessionManager.shared.patchMode = true
-        self.checkToken() { 
+        self.checkToken() {
             self.showLogin()
         }
     }
@@ -50,13 +50,17 @@ class HomeViewController: UIViewController {
         SessionManager.shared.patchMode = true
         Auth0
             .webAuth()
-            .scope("openid profile offline_access read:current_user update:current_user_metadata")
-        .audience("https://dev-r9pv8wdv.auth0.com/api/v2/")
+            .scope("openid profile offline_access")
+            .audience("https://cnl.wohui.co/")
             .start {
                 switch $0 {
                 case .failure(let error):
                     print("Error: \(error)")
                 case .success(let credentials):
+                    if let accessToken = credentials.accessToken {
+                        print("You should be able to use the following token in api.wohui.co")
+                        print(accessToken)
+                    }
                     if(!SessionManager.shared.store(credentials: credentials)) {
                         print("Failed to store credentials")
                     } else {
